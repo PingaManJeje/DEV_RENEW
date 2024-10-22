@@ -50,7 +50,7 @@ jobs:
       run: |
         # Configure git
         git config --local user.email "krzzlpzz@gmail.com"
-        git config --local user.name "KrzzLpzz"
+        git config --local user.name "itsKrzz"
         git add .
         git commit -m "Call APIs" -a
     - name: Push changes
