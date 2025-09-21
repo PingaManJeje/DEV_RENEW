@@ -49,8 +49,8 @@ jobs:
     - name: Commit
       run: |
         # Configure git
-        git config --local user.email "krzzlpzz@gmail.com"
-        git config --local user.name "itsKrzz"
+        git config --local user.email "krzzlpzz+1@gmail.com"
+        git config --local user.name "PingaManJeje"
         git add .
         git commit -m "Call APIs" -a
     - name: Push changes
