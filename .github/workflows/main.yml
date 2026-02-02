@@ -17,9 +17,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     # Run on master branch only and Self-ordered start
-    if: |
-      github.ref == 'refs/heads/master' &&
-      ( (github.event.repository.owner.id == github.event.sender.id) || ${{ github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success' }} )
+    if: github.ref == 'refs/heads/master' && (github.event.repository.owner.id == github.event.sender.id || github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success')
     name: Build and call APIs
     steps:
     - name: Checkout
